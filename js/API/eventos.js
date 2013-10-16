@@ -38,9 +38,9 @@ $(document).ready(function (e) {
 			})
 				.html('')
 				.css({
-				background: 'red'
+				background: '#ebebeb'
 			})
-				.addClass("text"));
+				);
 				
 			
 
@@ -50,11 +50,8 @@ $(document).ready(function (e) {
 				.attr({
 				id: 'posicion' + index + '2'
 			})
-				.html('arrayValores[0]')
-				.css({
-				background: 'red'
-			})
-				.addClass("text"));
+				.html('')
+				);
 			
 			$linea.append($('<td></td>')
 
@@ -62,13 +59,11 @@ $(document).ready(function (e) {
 				id: 'posicion' + index + '3'
 			}) // añadimos un atributo id
 
-			.html('arrayValores[0]') // el valor de la celda    
+			.html('') // el valor de la celda    
 
 			.css({
-				background: 'red'
-			}) // un estilo
-
-			.addClass("text") // una clase
+				background: '#ebebeb'
+			})
 
 			);
 			
@@ -78,13 +73,8 @@ $(document).ready(function (e) {
 				id: 'posicion' + index + '4'
 			}) // añadimos un atributo id
 
-			.html('arrayValores[0]') // el valor de la celda    
+			.html('') // el valor de la celda    
 
-			.css({
-				background: 'red'
-			}) // un estilo
-
-			.addClass("text") // una clase
 
 			);
 			
@@ -94,17 +84,15 @@ $(document).ready(function (e) {
 				id: 'posicion' + index + '5'
 			}) // añadimos un atributo id
 
-			.html('arrayValores[0]') // el valor de la celda    
+			.html('') // el valor de la celda    
 
 			.css({
-				background: 'red'
-			}) // un estilo
-
-			.addClass("text") // una clase
+				background: '#ebebeb'
+			})
 
 			);
 			tabla.append($linea);
-			$('<input  type="text" name="textinput" id="hola1" value="holamundo" />').appendTo('#posicion' + index + '1');
+			$('<input  type="text" name="textinput" id="hola1" value="" />').appendTo('#posicion' + index + '1');
 			index++;
 
 
