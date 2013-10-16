@@ -44,7 +44,7 @@ $(document).ready(function (e) {
 
 			.addClass("text"); // una clase
 
-			$celda.append($('<input  type="text" name="textinput" id="hola1" value="" />'));
+			$celda.append('<input  type="text" name="textinput" id="hola1" value="" />');
 				
 			
 
