@@ -39,6 +39,7 @@ $(document).ready(function (e) {
 				.html('')
 				.css({
 				background: '#ebebeb'
+				width='20%'
 			})
 				);
 				
@@ -51,6 +52,10 @@ $(document).ready(function (e) {
 				id: 'posicion' + index + '2'
 			})
 				.html('')
+						  .css({
+				
+				width='10%'
+			})
 				);
 			
 			$linea.append($('<td></td>')
@@ -63,6 +68,7 @@ $(document).ready(function (e) {
 
 			.css({
 				background: '#ebebeb'
+				width='50%'
 			})
 
 			);
@@ -73,7 +79,11 @@ $(document).ready(function (e) {
 				id: 'posicion' + index + '4'
 			}) // añadimos un atributo id
 
-			.html('') // el valor de la celda    
+			.html('') // el valor de la celda
+						  .css({
+		
+				width='10%'
+			})
 
 
 			);
@@ -88,6 +98,7 @@ $(document).ready(function (e) {
 
 			.css({
 				background: '#ebebeb'
+				width='10%'
 			})
 
 			);
