@@ -9,7 +9,10 @@ $(document).ready(function (e) {
 
 		window.location.href = '#form1';
 
-
+		var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+		var f = new Date();
+		document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+		$('#descripcion').val(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
 
 		//---------------datos 
 		$('#datos').tap(function () {
@@ -21,6 +24,32 @@ $(document).ready(function (e) {
 
 
 		});
+
+		$('#add_line').tap(function () {
+			var tabla = $('#Claves');
+			var $linea = $('<tr></tr>');
+
+			$linea.append($('<td></td>')
+
+			.attr({
+				id: 'posicion' + index + '1'
+			}) // añadimos un atributo id
+
+			.html('arrayValores[0]') // el valor de la celda    
+
+			.css({
+				background: 'red'
+			}) // un estilo
+
+			.addClass("text") // una clase
+
+			);
+			tabla.append($linea);
+
+
+
+		});
+
 
 
 		$('#cancela').tap(function () {
@@ -188,26 +217,26 @@ $(document).ready(function (e) {
 
 			if (isConnected()) {
 
-				
-				
+
+
 				(function () {
-				guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen, cont);
-				var cont2 = parseInt(cont) + 1;
-				cont = cont2.toString();
-				setCookie("indice", cont, 365);
-					
+					guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen, cont);
+					var cont2 = parseInt(cont) + 1;
+					cont = cont2.toString();
+					setCookie("indice", cont, 365);
+
 					(function () {
-							leeresarvas2();
-						
+						leeresarvas2();
+
 					}());
 				}());
 
 
-			
+
 			} else {
 				guardatempcalif(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen);
 			}
-return false;
+			return false;
 
 		});
 

@@ -29,7 +29,7 @@
 			}
 			div.abs2 {
 				margin:auto;
-				width:750px;
+				width:100%;
 				text-align:center;
 			}
 			div.abs3 {
@@ -65,26 +65,135 @@
 			<div data-role="header" data_theme="a">
 				<h1>Victorinox México</h1>
 			</div>
-			<div class="logo">
+			<!-- <div class="logo">
 				<img src="css/images/logoVictorinox.png" width="180px" height="100%" alt="VICTORINOX" style="right:0px;">
+font-weight:bold; 
+			</div>
+-->
+			<div style="text-align: center;  ">
+				<label for="textinput" style="text-align: center; " data-theme="b">Av. Hermanos Sérdan N° 717 Col. Sn Rafael Poniente, CP 72029 Puebla, Pue. México. 01 (222) 2668330 ext 113 ferias@victorinox.com.mx</label>
 			</div>
 			<div data-role="content" data-theme="b" style=" top:600 ;alignment-adjust:central; vertical-align:central; text-align:center">
 				<div class="abs">
 					<div class="abs2">
+						<TABLE WIDTH=100% HEIGHT=200>
+							<tr>
+								<TD width="33%" ALIGN=LEFT>
+									<img src="css/images/logoVictorinox.png" width="180px" height="138px" alt="VICTORINOX" style="right:0px;">
+								</TD>
+								<TD width="33%" ALIGN=CENTER>
+									<label for="textinput" data-theme="b">COTIZACIÓN</label>
+								</TD>
+								<TD width="33%" ALIGN=RIGHT>
+									<label data-theme="b" id="descripcion"></label>
+								</TD>
+							</tr>
+							<tr>
+								<TD width="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Comprador:</label>
+									<input disabled="true" type="text" name="textinput" id="Comprador" value="" />
+								</TD>
+								<TD width="33%" ALIGN=LEFT></TD>
+								<TD width="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Agente:</label>
+									<input disabled="true" type="text" name="textinput" id="agente" value="" />
+								</TD>
+							</tr>
+							<tr>
+								<TD width="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Cliente:</label>
+									<input type="text" name="textinput" id="cliente" value="" />
+								</TD>
+								<TD WIDTH="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Poblacion:</label>
+									<input disabled="true" type="text" name="textinput" id="poblacion" value="" />
+								</TD>
+								<TD WIDTH="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Condic:</label>
+									<input disabled="true" type="text" name="textinput" id="condic" value="" />
+								</TD>
+							</tr>
+							<tr>
+								<TD width="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Razon Social:</label>
+									<input disabled="true" type="text" name="textinput" id="razon" value="" />
+								</TD>
+								<TD WIDTH="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Estado:</label>
+									<input disabled="true" type="text" name="textinput" id="estado" value="" />
+								</TD>
+								<TD WIDTH="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Tel:</label>
+									<input disabled="true" type="text" name="textinput" id="tel" value="" />
+								</TD>
+							</tr>
+							<tr>
+								<TD width="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Calle:</label>
+									<input disabled="true" type="text" name="textinput" id="calle" value="" />
+								</TD>
+								<TD WIDTH="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">C.P.:</label>
+									<input disabled="true" type="text" name="textinput" id="cp" value="" />
+								</TD>
+								<TD WIDTH="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Fax:</label>
+									<input disabled="true" type="text" name="textinput" id="fax" value="" />
+								</TD>
+							</tr>
+							<tr>
+								<TD width="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Colonia:</label>
+									<input disabled="true" type="text" name="textinput" id="colonia" value="" />
+								</TD>
+								<TD WIDTH="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Status:</label>
+									<input disabled="true" type="text" name="textinput" id="status" value="" />
+								</TD>
+								<TD WIDTH="33%" ALIGN=LEFT>
+									<label for="textinput" data-theme="b">Mail:</label>
+									<input disabled="true" type="text" name="textinput" id="mail" value="" />
+								</TD>
+							</tr>
+						</TABLE>
 						<div style="text-align: left; font-weight:bold;  ">
-						<label for="textinput" style="text-align: center; " data-theme="b">Victorinox México quiere estar cerca de tí</label>
-							</div>
+							<label for="textinput" style="text-align: center; " data-theme="b">Por medio de la presente te envio un cordial saludo y a su vez te hago llegar la cotización solicitada.</label>
+						</div>
+						<TABLE WIDTH=100% HEIGHT=auto id="Claves">
+							<tr>
+								<TD width="20%" ALIGN=center>
+									<label data-theme="b">Clave</label>
+								</TD>
+								<TD width="20%" ALIGN=center>
+									<label data-theme="b">Cant</label>
+								</TD>
+								<TD width="20%" ALIGN=center>
+									<label data-theme="b">Descripción</label>
+								</TD>
+								<TD width="20%" ALIGN=center>
+									<label data-theme="b">Precio Unit</label>
+								</TD>
+								<TD width="20%" ALIGN=center>
+									<label data-theme="b">Total</label>
+								</TD>
+							</tr>
+						</TABLE>
+						<div data-role="navbar" data-iconpos="top">
+							<ul>
+								<li>
+									
+									<a href="#" data-transition="none" data-theme="c" id="add_line">Añadir Renglon</a>
+								</li>
+								
+							</ul>
+						</div>
 						<div data-role="fieldcontain" style="text-align: center; " data-theme="b">
 							<div data-role="fieldcontain" data-theme="b">
 								<label for="textinput" data-theme="b">Nombre:</label>
 								<br>
 								<input type="text" name="textinput" id="nombre" value="" />
 							</div>
-							<div data-role="fieldcontain" data-theme="b">
-								<label for="textinput" data-theme="b">Dirección:</label>
-								<br>
-								<input type="text" name="textinput" id="direccion" value="" />
-							</div>
+							<div data-role="fieldcontain" data-theme="b"></div>
 							<div data-role="fieldcontain" data-theme="b">
 								<label for="textinput" data-theme="b">Ciudad:</label>
 								<br>
@@ -96,36 +205,6 @@
 								<select name="selectmenu" id="estado" data-theme="b">
 									<option value="Aguascalientes" data-theme="b">Aguascalientes</option>
 									<option value="Baja California" data-theme="b">Baja California</option>
-									<option value="Baja California Sur" data-theme="b">Baja California Sur</option>
-									<option value="Campeche" data-theme="b">Campeche</option>
-									<option value="Chiapas" data-theme="b">Chiapas</option>
-									<option value="Chihuahua" data-theme="b">Chihuahua</option>
-									<option value="Coahuila" data-theme="b">Coahuila</option>
-									<option value="Colima" data-theme="b">Colima</option>
-									<option value="Distrito Federal" data-theme="b">Distrito Federal</option>
-									<option value="Durango" data-theme="b">Durango</option>
-									<option value="Estado de México" data-theme="b">Estado de México</option>
-									<option value="Guanajuato" data-theme="b">Guanajuato</option>
-									<option value="Guerrero" data-theme="b">Guerrero</option>
-									<option value="Hidalgo" data-theme="b">Hidalgo</option>
-									<option value="Jalisco" data-theme="b">Jalisco</option>
-									<option value="Michoacán" data-theme="b">Michoacán</option>
-									<option value="Morelos" data-theme="b">Morelos</option>
-									<option value="Nayarit" data-theme="b">Nayarit</option>
-									<option value="Nuevo León" data-theme="b">Nuevo León</option>
-									<option value="Oaxaca" data-theme="b">Oaxaca</option>
-									<option value="Puebla" data-theme="b">Puebla</option>
-									<option value="Querétaro" data-theme="b">Querétaro</option>
-									<option value="Quintana Roo" data-theme="b">Quintana Roo</option>
-									<option value="San Luis Potosí" data-theme="b">San Luis Potosí</option>
-									<option value="Sinaloa" data-theme="b">Sinaloa</option>
-									<option value="Sonora" data-theme="b">Sonora</option>
-									<option value="Tabasco" data-theme="b">Tabasco</option>
-									<option value="Tamaulipas" data-theme="b">Tamaulipas</option>
-									<option value="Tlaxcala" data-theme="b">Tlaxcala</option>
-									<option value="Veracruz" data-theme="b">Veracruz</option>
-									<option value="Yucatán" data-theme="b">Yucatán</option>
-									<option value="Zacatecas" data-theme="b">Zacatecas</option>
 								</select>
 							</div>
 							<div data-role="fieldcontain" data-theme="b">
@@ -133,7 +212,6 @@
 								<br>
 								<input type="tel" name="textinput" id="telefono" value="" />
 							</div>
-							
 							<div data-role="fieldcontain" data-theme="b">
 								<label for="textinput" data-theme="b">Código Postal:</label>
 								<br>
@@ -158,12 +236,11 @@
 								<fieldset data-role="controlgroup" data-theme="c">
 									<legend>Le interesa recibir nuestros:</legend>
 									<br>
-								
-									<input type="checkbox" name="checkbox1_0" id="checkbox1_0"  value="si"  data-theme="c"/>
+									<input type="checkbox" name="checkbox1_0" id="checkbox1_0" value="si" data-theme="c" />
 									<label for="checkbox1_0">Catálogos</label>
-									<input type="checkbox" name="checkbox1_1" id="checkbox1_1"  value="si"  data-theme="c"/>
+									<input type="checkbox" name="checkbox1_1" id="checkbox1_1" value="si" data-theme="c" />
 									<label for="checkbox1_1">Promociones</label>
-									<input type="checkbox" name="checkbox1_2" id="checkbox1_2"  value="si"  data-theme="c"/>
+									<input type="checkbox" name="checkbox1_2" id="checkbox1_2" value="si" data-theme="c" />
 									<label for="checkbox1_2">Invitación a futuros eventos</label>
 								</fieldset>
 							</div>
@@ -171,15 +248,15 @@
 								<fieldset data-role="controlgroup" data-theme="c">
 									<legend>¿Cuáles son las líneas que le interesan?</legend>
 									<br>
-									<input type="checkbox" name="checkbox2_0" id="checkbox2_0"  value="si"  data-theme="c"/>
+									<input type="checkbox" name="checkbox2_0" id="checkbox2_0" value="si" data-theme="c" />
 									<label for="checkbox2_0">Victorinox: navajas, relojes, cuchillos y equipaje</label>
-									<input type="checkbox" name="checkbox2_1" id="checkbox2_1"  value="si"  data-theme="c"/>
+									<input type="checkbox" name="checkbox2_1" id="checkbox2_1" value="si" data-theme="c" />
 									<label for="checkbox2_1">Maglite: linternas</label>
-									<input type="checkbox" name="checkbox2_2" id="checkbox2_2"  value="si" data-theme="c" />
+									<input type="checkbox" name="checkbox2_2" id="checkbox2_2" value="si" data-theme="c" />
 									<label for="checkbox2_2">Celestron: telescopios, binoculares, y microscopios</label>
-									<input type="checkbox" name="checkbox2_3" id="checkbox2_3"  value="si"  data-theme="c"/>
+									<input type="checkbox" name="checkbox2_3" id="checkbox2_3" value="si" data-theme="c" />
 									<label for="checkbox2_3">Felco: podaderas y cizallas</label>
-									<input type="checkbox" name="checkbox2_4" id="checkbox2_4"  value="si" data-theme="c" />
+									<input type="checkbox" name="checkbox2_4" id="checkbox2_4" value="si" data-theme="c" />
 									<label for="checkbox2_4">Wenger: navajas, cuchillos y relojes</label>
 								</fieldset>
 							</div>
@@ -187,28 +264,21 @@
 					</div>
 				</div>
 				<div style="text-align: center; font-weight:bold;  ">
-				<label for="textinput" style="text-align: center; " data-theme="b">¡Muchas Gracias!</label>
+					<label for="textinput" style="text-align: center; " data-theme="b">¡Muchas Gracias!</label>
 					<br>
-					
-					</div>
+				</div>
 				<div data-role="navbar" data-iconpos="top">
-            <ul>
-                <li>
-					<br>
-                    <a href="#" data-transition="none" data-theme="c" id="cancela">
-                        Cancelar
-                    </a>
-                </li>
-                <li>
-					<br>
-                    <a data-theme="c" href="#" data-transition="none" id="guarda">
-                        Guardar
-                    </a>
-                </li>
-                
-            </ul>
-        
-      </div>
+					<ul>
+						<li>
+							<br>
+							<a href="#" data-transition="none" data-theme="c" id="cancela">Cancelar</a>
+						</li>
+						<li>
+							<br>
+							<a data-theme="c" href="#" data-transition="none" id="guarda">Guardar</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div data-role="footer" style="text-align:center;" data-position="fixed" data-theme="b">
 				<img src="css/images/plecaVictorinox.jpg" width="100%" height="20px" alt="Texto Alternativo">
@@ -514,14 +584,22 @@
 	</div>
     </div>-->
 		<script type="text/javascript" src="http://digitalbush.com/wp-content/uploads/2013/01/jquery.maskedinput-1.3.1.min_.js"></script>
-		<script type="text/javascript">// <![CDATA[
-jQuery(function($) {
-      $.mask.definitions['h'] = "[? 0-9]";
-     
-      $('#telefono').mask('(h99) 9999999');
-   
-   });
-// ]]&gt;</script>
+		<script type="text/javascript">
+			// <![CDATA[
+			jQuery(function($) {
+				$.mask.definitions['h'] = "[? 0-9]";
+
+				$('#telefono').mask('(h99) 9999999');
+
+				var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+				var f = new Date();
+
+
+				document.getElementById('descripcion').innerHTML = "Puebla Pue, a:  " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear();
+
+			});
+			 // ]]&gt;
+		</script>
 	</body>
 
 </html>
