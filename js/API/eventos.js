@@ -26,6 +26,7 @@ $(document).ready(function (e) {
 		});
 
 		$('#add_line').tap(function () {
+			alert("entra en evento add line");
 			var tabla = $('#Claves');
 			var $linea = $('<tr></tr>');
 
