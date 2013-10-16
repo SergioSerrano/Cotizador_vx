@@ -30,25 +30,13 @@ $(document).ready(function (e) {
 			var tabla = $('#Claves');
 			var $linea = $('<tr></tr>');
 
-			var $celda = $('<td></td>')
+			
 
-			.attr({
-				id: 'posicion' + index + '1'
-			}) // añadimos un atributo id
-
-			.html() // el valor de la celda    
-
-			.css({
-				background: 'red'
-			}) // un estilo
-
-			.addClass("text"); // una clase
-
-			$('<input  type="text" name="textinput" id="hola1" value="holamundo" />').appendTo($celda);
+			
 				
 			
 
-			$linea.append($celda);
+			
 
 			$linea.append($('<td></td>')
 				.attr({
@@ -108,6 +96,7 @@ $(document).ready(function (e) {
 
 			);
 			tabla.append($linea);
+			$('<input  type="text" name="textinput" id="hola1" value="holamundo" />').appendTo('#posicion' + index + '2');
 
 
 
