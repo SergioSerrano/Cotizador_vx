@@ -32,7 +32,15 @@ $(document).ready(function (e) {
 
 			
 
-			
+			$linea.append($('<td></td>')
+				.attr({
+				id: 'posicion' + index + '1'
+			})
+				.html()
+				.css({
+				background: 'red'
+			})
+				.addClass("text"));
 				
 			
 
@@ -96,7 +104,8 @@ $(document).ready(function (e) {
 
 			);
 			tabla.append($linea);
-			$('<input  type="text" name="textinput" id="hola1" value="holamundo" />').appendTo('#posicion' + index + '2');
+			$('<input  type="text" name="textinput" id="hola1" value="holamundo" />').appendTo('#posicion' + index + '1');
+			index++;
 
 
 
