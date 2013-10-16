@@ -33,7 +33,7 @@ $(document).ready(function (e) {
 			$linea.append($('<td></td>')
 
 			.attr({
-				id: 'posicion' + index + '1'
+				id: 'posicion 1'
 			}) // añadimos un atributo id
 
 			.html('arrayValores[0]') // el valor de la celda    
