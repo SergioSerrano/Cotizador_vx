@@ -1,5 +1,5 @@
 //Eventos
-
+var index = 0;
 
 $(document).ready(function (e) {
 
@@ -11,7 +11,7 @@ $(document).ready(function (e) {
 
 		var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
 		var f = new Date();
-		
+
 		$('#descripcion').val(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
 
 		//---------------datos 
@@ -30,10 +30,77 @@ $(document).ready(function (e) {
 			var tabla = $('#Claves');
 			var $linea = $('<tr></tr>');
 
+			var $celda = $('<td></td>')
+
+			.attr({
+				id: 'posicion' + index + '1'
+			}) // añadimos un atributo id
+
+			.html() // el valor de la celda    
+
+			.css({
+				background: 'red'
+			}) // un estilo
+
+			.addClass("text"); // una clase
+
+			$celda.append('<input/>')
+				.attr({
+				type: 'text'
+				name: 'textinput'
+				id: 'Comprador'
+				value: ""
+			});
+			
+
+			$linea.append(celda);
+
+			$linea.append($('<td></td>')
+				.attr({
+				id: 'posicion' + index + '2'
+			})
+				.html('arrayValores[0]')
+				.css({
+				background: 'red'
+			})
+				.addClass("text"));
+			
 			$linea.append($('<td></td>')
 
 			.attr({
-				id: 'posicion 1'
+				id: 'posicion' + index + '3'
+			}) // añadimos un atributo id
+
+			.html('arrayValores[0]') // el valor de la celda    
+
+			.css({
+				background: 'red'
+			}) // un estilo
+
+			.addClass("text") // una clase
+
+			);
+			
+			$linea.append($('<td></td>')
+
+			.attr({
+				id: 'posicion' + index + '4'
+			}) // añadimos un atributo id
+
+			.html('arrayValores[0]') // el valor de la celda    
+
+			.css({
+				background: 'red'
+			}) // un estilo
+
+			.addClass("text") // una clase
+
+			);
+			
+			$linea.append($('<td></td>')
+
+			.attr({
+				id: 'posicion' + index + '5'
 			}) // añadimos un atributo id
 
 			.html('arrayValores[0]') // el valor de la celda    
