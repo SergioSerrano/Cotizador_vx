@@ -32,7 +32,7 @@ $(document).ready(function (e) {
 
 			
 
-			$linea.append($('<td> width="20%" </td>')
+			$linea.append($('<td></td>')
 				.attr({
 				id: 'posicion' + index + '1'
 			})
@@ -55,7 +55,7 @@ $(document).ready(function (e) {
 						
 				);
 			
-			$linea.append($('<td> width="50%"</td>')
+			$linea.append($('<td> </td>')
 
 			.attr({
 				id: 'posicion' + index + '3'
@@ -70,7 +70,7 @@ $(document).ready(function (e) {
 
 			);
 			
-			$linea.append($('<td> width="10%"</td>')
+			$linea.append($('<td> </td>')
 
 			.attr({
 				id: 'posicion' + index + '4'
@@ -82,7 +82,7 @@ $(document).ready(function (e) {
 
 			);
 			
-			$linea.append($('<td> width="10%"</td>')
+			$linea.append($('<td> </td>')
 
 			.attr({
 				id: 'posicion' + index + '5'
