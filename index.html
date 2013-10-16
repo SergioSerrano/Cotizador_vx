@@ -111,7 +111,7 @@ font-weight:bold;
 							<tr>
 								<TD width="33%" ALIGN=LEFT>
 									<label for="textinput" data-theme="b">Cliente:</label>
-									<input type="text" name="textinput" id="cliente" value="" />
+									<input type="text" name="textinput" id="No_cliente" value="" />
 								</TD>
 								<TD WIDTH="33%" ALIGN=LEFT>
 									<label for="textinput" data-theme="b">Poblacion:</label>
@@ -196,80 +196,24 @@ font-weight:bold;
 								
 							</ul>
 						</div>
-						<div data-role="fieldcontain" style="text-align: center; " data-theme="b">
-							<div data-role="fieldcontain" data-theme="b">
-								<label for="textinput" data-theme="b">Nombre:</label>
-								<br>
-								<input type="text" name="textinput" id="nombre" value="" />
-							</div>
-							<div data-role="fieldcontain" data-theme="b"></div>
-							<div data-role="fieldcontain" data-theme="b">
-								<label for="textinput" data-theme="b">Ciudad:</label>
-								<br>
-								<input type="text" name="textinput" id="ciudad" value="" />
-							</div>
-							<div data-role="fieldcontain" data-theme="b">
-								<label for="selectmenu" class="select" data-theme="b">Estado:</label>
-								<br>
-								<select name="selectmenu" id="estado" data-theme="b">
-									<option value="Aguascalientes" data-theme="b">Aguascalientes</option>
-									<option value="Baja California" data-theme="b">Baja California</option>
-								</select>
-							</div>
-							<div data-role="fieldcontain" data-theme="b">
-								<label for="textinput" data-theme="b">Teléfono:</label>
-								<br>
-								<input type="tel" name="textinput" id="telefono" value="" />
-							</div>
-							<div data-role="fieldcontain" data-theme="b">
-								<label for="textinput" data-theme="b">Código Postal:</label>
-								<br>
-								<input type="tel" name="textinput" id="cp" value="" />
-							</div>
-							<div data-role="fieldcontain" data-theme="b">
-								<label for="textinput" data-theme="b">Email:</label>
-								<br>
-								<input type="email" name="textinput" id="email" value="" />
-							</div>
-							<div data-role="fieldcontain" data-theme="b">
-								<label for="textinput" data-theme="b">Empresa:</label>
-								<br>
-								<input data-theme="b" type="text" name="textinput" id="empresa" value="" />
-							</div>
-							<div data-role="fieldcontain" data-theme="b">
-								<label for="textinput" data-theme="b">Puesto:</label>
-								<br>
-								<input type="text" name="textinput" id="puesto" value="" />
-							</div>
-							<div data-role="fieldcontain" data-theme="c">
-								<fieldset data-role="controlgroup" data-theme="c">
-									<legend>Le interesa recibir nuestros:</legend>
-									<br>
-									<input type="checkbox" name="checkbox1_0" id="checkbox1_0" value="si" data-theme="c" />
-									<label for="checkbox1_0">Catálogos</label>
-									<input type="checkbox" name="checkbox1_1" id="checkbox1_1" value="si" data-theme="c" />
-									<label for="checkbox1_1">Promociones</label>
-									<input type="checkbox" name="checkbox1_2" id="checkbox1_2" value="si" data-theme="c" />
-									<label for="checkbox1_2">Invitación a futuros eventos</label>
-								</fieldset>
-							</div>
-							<div data-role="fieldcontain" data-theme="c">
-								<fieldset data-role="controlgroup" data-theme="c">
-									<legend>¿Cuáles son las líneas que le interesan?</legend>
-									<br>
-									<input type="checkbox" name="checkbox2_0" id="checkbox2_0" value="si" data-theme="c" />
-									<label for="checkbox2_0">Victorinox: navajas, relojes, cuchillos y equipaje</label>
-									<input type="checkbox" name="checkbox2_1" id="checkbox2_1" value="si" data-theme="c" />
-									<label for="checkbox2_1">Maglite: linternas</label>
-									<input type="checkbox" name="checkbox2_2" id="checkbox2_2" value="si" data-theme="c" />
-									<label for="checkbox2_2">Celestron: telescopios, binoculares, y microscopios</label>
-									<input type="checkbox" name="checkbox2_3" id="checkbox2_3" value="si" data-theme="c" />
-									<label for="checkbox2_3">Felco: podaderas y cizallas</label>
-									<input type="checkbox" name="checkbox2_4" id="checkbox2_4" value="si" data-theme="c" />
-									<label for="checkbox2_4">Wenger: navajas, cuchillos y relojes</label>
-								</fieldset>
-							</div>
-						</div>
+						<!--//inicia final-->
+						<TABLE WIDTH=100% HEIGHT=auto id="totales">
+							<tr>
+								<TD width="20%" ALIGN=center>
+									<label data-theme="b">Clave</label>
+								</TD>
+								<TD width="20%" ALIGN=center>
+									<label data-theme="b">Cant</label>
+								</TD>
+								<TD width="20%" ALIGN=center>
+									<label data-theme="b">Descripción</label>
+								</TD>
+								<TD width="20%" ALIGN=center>
+									<label data-theme="b">Precio Unit</label>
+								</TD>
+								
+							</tr>
+						</TABLE>
 					</div>
 				</div>
 				<div style="text-align: center; font-weight:bold;  ">
@@ -308,297 +252,14 @@ font-weight:bold;
 			</div>
 			<div data-role="footer" data-position="fixed" data-theme="b"></div>
 		</div>
-		<!-- pagina consultas <div data-role="page" id="pregunta111" style="text-align:center; height: 100%;" data-theme="b">
-<div data-role="header" data_theme="a">
-		<h1>Victorinox México</h1>
-	</div>
-    <div  class="logo" >
-    <img src="css/images/logoVictorinox.png" width="180px" height="100%" alt="VICTORINOX" style="right:0px;"> 
-    
-    </div> 
-<div data-role="content" data-position="fixed" style=" height: 100%;" align="center" data-theme="b">
-
-
-
- <h1><legend class="ui-navbar-toggle" ID="LEG1" style="text-align:center" data-theme="b">¿Qué le pareció la imagen general del stand de VICTORINOX?</legend></h1>
-    <div  class="abs"  data-theme="b" >
-       
-  <div  class="abs2" data-theme="b">
-  <fieldset ID="GROUP1" data-role="controlgroup" data-type="horizontal"  data-theme="b">
-  
-  
-     
-    
-    <input type="radio" name="pregunta1" id="pregunta1_0" value="1" data-theme="b"/>
-	      <label  for="pregunta1_0" data-theme="b"><img src="css/images/emoticones_malo.png" style="alignment-adjust:middle" width="200" height="200" alt="J"></label>
-          
-          <input type="radio" name="pregunta1" id="pregunta1_1" value="2" data-theme="b"/>
-	      <label for="pregunta1_1" data-theme="b"><img src="css/images/emoticones_bueno.png" width="200" height="200" alt="J"></label>
-          
-          <input type="radio" name="pregunta1" id="pregunta1_2" value="3" data-theme="b" />
-    <label for="pregunta1_2" data-theme="b"><img src="css/images/emoticones_excelente.png" width="200" height="200" alt="J"></label>    
-    
-    
-    </fieldset> 
-    </div>
-    </div>
-    
-   
-  </div>
-    <div  class="inferior" style="text-align:center" data-position="fixed">
-    <a href="#pregunta112"  data-role="button" data-icon="arrow-r" data-transition="flip" data-theme="c">Siguiente</a>
-    
-    </div> 
- 
-  <div data-role="footer" style="text-align:center;"  data-position="fixed" data-theme="b">
-      <img src="css/images/plecaVictorinox.jpg" width="100%" height="20px" alt="Texto Alternativo"> 
-        <a data-role="button" data-theme="b" href="#nosotros" class="ui-btn-left" data-transition="slideup">Nosotros</a>
-        <span style="font-size: 8pt;">Todos los derechos reservados &copy;</span>
-	</div>
-</div>
-  <div data-role="page" id="pregunta112"  style="text-align:center; height: 100%;"  data-theme="b">
-  <div data-role="header" data-theme="a">
-		<h1>Victorinox México</h1>
-	</div>
-       <div  class="logo" >
-    <img src="css/images/logoVictorinox.png" width="180px" height="100%" alt="VICTORINOX" style="right:0px;"> 
-    
-    </div> 
-    
-        <div data-role="content" data-position="fixed" style=" height: 100%;" align="center" data-theme="b">
-
-<div class="superior" > 
-    <a href="#pregunta111" data-role="button" data-icon="arrow-l" data-transition="flip" data-theme="c">Anterior</a>
-</div>
-    
-   <h1>
-	        <legend ID="LEG2" style="text-align:center">¿Qué le pareció la exhibición de los productos?</legend>
-          </h1>     
-  <div  class="abs" >
-
-     <fieldset ID="GROUP2" data-role="controlgroup" data-type="horizontal" style="visibility: visible; font-size: 14px;">
 	
-	      
-          
-	    <div  class="abs2">
-         
-	      <input type="radio" name="pregunta2" id="pregunta2_0" value="1" />
-	      <label  for="pregunta2_0"><img src="css/images/emoticones_malo.png" width="200" height="200" alt="J"></label>
-          
-          <input type="radio" name="pregunta2" id="pregunta2_1" value="2" />
-	      <label for="pregunta2_1"><img src="css/images/emoticones_bueno.png" width="200" height="200" alt="J"></label>
-          
-          <input type="radio" name="pregunta2" id="pregunta2_2" value="3" />
-    <label for="pregunta2_2"><img src="css/images/emoticones_excelente.png" width="200" height="200" alt="J"></label>
-	     
-           </div>
-        </fieldset>
-        </div>
-        
-    </div>
-       
-       <div  class="inferior" style="text-align:center;" data-position="fixed">
-    <a href="#pregunta113"  data-role="button" data-icon="arrow-r" data-transition="flip" data-theme="c">Siguiente</a>
-    
-    </div> 
-<div data-role="footer" style="text-align:center;"  data-position="fixed" data-theme="b">
-      <img src="css/images/plecaVictorinox.jpg" width="100%" height="20px" alt="Texto Alternativo"> 
-        <a data-role="button" data-theme="b" href="#nosotros" class="ui-btn-left" data-transition="slideup">Nosotros</a>
-        <span style="font-size: 8pt;">Todos los derechos reservados &copy;</span>
-	</div>
-   
-  </div>
-  
-  <div data-role="page" id="pregunta113"  style="text-align:center; height: 100%;"  data-theme="b">
-        <div data-role="header" data-theme="a">
-		<h1>Victorinox México</h1>
-	</div>
-      <div  class="logo" >
-    <img src="css/images/logoVictorinox.png" width="180px" height="100%" alt="VICTORINOX" style="right:0px;"> 
-    
-    </div> 
-   <div data-role="content" data-position="fixed" style=" height: 100%;" align="center" data-theme="b">
-
-<div class="superior" > 
-    <a href="#pregunta112" data-role="button" data-icon="arrow-l" data-transition="flip" data-theme="c">Anterior</a>
-</div>
-  <h1>
-	        <legend ID="LEG3" tyle="text-align:center;">¿Cómo considera que fue el servicio otorgado por el personal de ventas?</legend>
-          </h1>
-        
-     <div  class="abs" >
-  
-  <fieldset ID="GROUP3" data-role="controlgroup" data-type="horizontal" style="visibility:visible">
-	      
-          
-	         <div  class="abs2">
-         
-	      <input type="radio" name="pregunta3" id="pregunta3_0" value="1" />
-	      <label  for="pregunta3_0"><img src="css/images/emoticones_malo.png" width="200" height="200" alt="J"></label>
-          
-          <input type="radio" name="pregunta3" id="pregunta3_1" value="2" />
-	      <label for="pregunta3_1"><img src="css/images/emoticones_bueno.png" width="200" height="200" alt="J"></label>
-	    
-        <input type="radio" name="pregunta3" id="pregunta3_2" value="3" />
-    <label for="pregunta3_2"><img src="css/images/emoticones_excelente.png" width="200" height="200" alt="J"></label>
-           </div>
-        </fieldset>
-   
-    </div>
-          
-        </div>
-      <div  class="inferior" style="text-align:center;" data-position="fixed">
-    <a href="#pregunta114"  data-role="button" data-icon="arrow-r" data-transition="flip" data-theme="c">Siguiente</a>
-    
-    </div>
-         <div data-role="footer" style="text-align:center;"  data-position="fixed" data-theme="b">
-      <img src="css/images/plecaVictorinox.jpg" width="100%" height="20px" alt="Texto Alternativo"> 
-        <a data-role="button" data-theme="b" href="#nosotros" class="ui-btn-left" data-transition="slideup">Nosotros</a>
-        <span style="font-size: 8pt;">Todos los derechos reservados &copy;</span>
-	</div>
-        </div>
-        
-        <div data-role="page" id="pregunta114"  style="text-align:center; height: 100%;"  data-theme="b">
-        <div data-role="header" data-theme="a">
-		<h1>Victorinox México</h1>
-	</div>
-             <div  class="logo" >
-    <img src="css/images/logoVictorinox.png" width="180px" height="100%" alt="VICTORINOX" style="right:0px;"> 
-    
-    </div> 
-   <div data-role="content" data-position="fixed" style=" height: 100%;" align="center" data-theme="b">
-    
-      <div class="superior" > 
-    <a href="#pregunta113" data-role="button" data-icon="arrow-l" data-transition="flip" data-theme="c">Anterior</a>
-          </div>
-    <h1>
-	        <legend ID="LEG4" style="text-align:center;">¿Cómo considera su experiencia en general de su vista a nuestra stand?</legend>
-          </h1>
-        <div  class="abs" >
-        
-        <fieldset ID="GROUP4" data-role="controlgroup" data-type="horizontal" style="visibility:visible">
-	      
-          
-           <div  class="abs2">
-	    
-         
-	      <input type="radio" name="pregunta4" id="pregunta4_0" value="1" />
-	      <label  for="pregunta4_0"><img src="css/images/emoticones_malo.png" width="200" height="200" alt="J"></label>
-          
-          <input type="radio" name="pregunta4" id="pregunta4_1" value="2" />
-	      <label for="pregunta4_1"><img src="css/images/emoticones_bueno.png" width="200" height="200" alt="J"></label>
-	      
-          <input type="radio" name="pregunta4" id="pregunta4_2" value="3" />
-    <label for="pregunta4_2"><img src="css/images/emoticones_excelente.png" width="200" height="200" alt="J"></label>
-     </div>
-        </fieldset>
-       
-        </div>
-       
-        </div>
-       <div  class="inferior" style="text-align:center;" data-position="fixed">
-    <a href="#pregunta115"  data-role="button" data-icon="arrow-r" data-transition="flip" data-theme="c">Siguiente</a>
-    
-    </div>
-     <div data-role="footer" style="text-align:center;"  data-position="fixed" data-theme="b">
-      <img src="css/images/plecaVictorinox.jpg" width="100%" height="20px" alt="Texto Alternativo"> 
-        <a data-role="button" data-theme="b" href="#nosotros" class="ui-btn-left" data-transition="slideup">Nosotros</a>
-        <span style="font-size: 8pt;">Todos los derechos reservados &copy;</span>
-	</div>
-        </div>
-        
-        <div data-role="page" id="pregunta115"  style="text-align:center; height: 100%;"  data-theme="b">
-            <div data-role="header" data-theme="a">
-		<h1>Victorinox México</h1>
-	</div>
-            <div  class="logo" >
-    <img src="css/images/logoVictorinox.png" width="180px" height="100%" alt="VICTORINOX" style="right:0px;"> 
-    
-    </div> 
-    <div data-role="content" data-position="fixed" style=" height: 100%;" align="center" data-theme="b">
-    
-      <div class="superior" > 
-    <a href="#pregunta114" data-role="button" data-icon="arrow-l" data-transition="flip" data-theme="c">Anterior</a>
-          </div>
-        <h1>
-	        <legend ID="LEG5" style="text-align:center;">¿Le dieron a conocer las novedades?</legend>
-          </h1>
-    <div  class="abs" >
-     
-        <fieldset ID="GROUP5" data-role="controlgroup" data-type="horizontal" style="visibility:visible">
-	      
-	      
-         <div  class="abs3">
-	      <input type="radio" name="pregunta5" id="pregunta5_0" value="1" />
-	      <label  for="pregunta5_0"><img src="css/images/emoticones_malo.png" width="200" height="200" alt="J"></label>
-          
-          <input type="radio" name="pregunta5" id="pregunta5_1" value="2" />
-	      <label for="pregunta5_1"><img src="css/images/emoticones_excelente.png" width="200" height="200" alt="J"></label>
-	    
-          </div>
-        </fieldset>
-        
-  </div>
-  
-    
-    </div>
-            <div  class="inferior" style="text-align:center;" data-position="fixed">
-    <a href="#pregunta116"  data-role="button" data-icon="arrow-r" data-transition="flip" data-theme="c">Siguiente</a>
-    
-    </div>
-      <div data-role="footer" style="text-align:center;"  data-position="fixed" data-theme="b">
-      <img src="css/images/plecaVictorinox.jpg" width="100%" height="20px" alt="Texto Alternativo"> 
-        <a data-role="button" data-theme="b" href="#nosotros" class="ui-btn-left" data-transition="slideup">Nosotros</a>
-        <span style="font-size: 8pt;">Todos los derechos reservados &copy;</span>
-	</div>
-    </div>
-   
-    
-    <div data-role="page" id="pregunta116"  style="text-align:center; height: 100%;"  data-theme="b">
-    <div data-role="header" data-theme="a">
-		<h1>Victorinox México</h1>
-	</div>
-        <div  class="logo" >
-    <img src="css/images/logoVictorinox.png" width="180px" height="100%" alt="VICTORINOX" style="right:0px;"> 
-    
-    </div> 
-    <div data-role="content" data-theme="b">
-    <div data-role="navbar" data-iconpos="top">
-            <ul>
-                <li>
-                    <a href="#pregunta111" data-transition="none" data-theme="c" id="cancela">
-                        Cancelar
-                    </a>
-                </li>
-                <li>
-                    <a data-theme="c" href="#" data-transition="none" id="guarda">
-                        Guardar
-                    </a>
-                </li>
-                
-            </ul>
-            
-            <a data-theme="c" href="#" data-transition="none" id="finaliza">
-                        Gracias por participar.<br>
-
-                        Finalizar encuesta
-                    </a>
-      </div>
-     
-    </div>
-      <div data-role="footer" style="text-align:center;"  data-position="fixed" data-theme="b">
-      <img src="css/images/plecaVictorinox.jpg" width="100%" height="20px" alt="Texto Alternativo"> 
-        <a data-role="button" data-theme="b" href="#nosotros" class="ui-btn-left" data-transition="slideup">Nosotros</a>
-        <span style="font-size: 8pt;">Todos los derechos reservados &copy;</span>
-	</div>
-    </div>-->
 		<script type="text/javascript" src="http://digitalbush.com/wp-content/uploads/2013/01/jquery.maskedinput-1.3.1.min_.js"></script>
 		<script type="text/javascript">
 			// <![CDATA[
 			jQuery(function($) {
 				$.mask.definitions['h'] = "[? 0-9]";
 
-				$('#telefono').mask('(h99) 9999999');
+				$('#No_cliente').mask('999999999');
 
 				var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
 				var f = new Date();

@@ -102,8 +102,24 @@ $(document).ready(function (e) {
 						  .addClass("gen")
 
 			);
+			
+			$linea.append($('<td> </td>')
+
+			.attr({
+				id: 'posicion' + index + '6'
+			}) // añadimos un atributo id
+
+			.html('') // el valor de la celda    
+
+			
+						  .addClass("gen")
+
+			);
+			
 			tabla.append($linea);
 			$('<input  type="text" name="textinput" id="hola1" value="" />').appendTo('#posicion' + index + '1');
+			
+			$('<a data-theme="c" href="#" data-transition="none" id="info_com">Guardar</a>').appendTo('#posicion' + index + '6');
 			index++;
 
 
