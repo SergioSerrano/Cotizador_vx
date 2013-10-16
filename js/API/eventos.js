@@ -32,14 +32,14 @@ $(document).ready(function (e) {
 
 			
 
-			$linea.append($('<td></td>')
+			$linea.append($('<td> width="20%" </td>')
 				.attr({
 				id: 'posicion' + index + '1'
 			})
 				.html('')
 				.css({
-				background: '#ebebeb';
-				width='20%';
+				background: '#ebebeb'
+				
 			})
 				);
 				
@@ -52,13 +52,10 @@ $(document).ready(function (e) {
 				id: 'posicion' + index + '2'
 			})
 				.html('')
-						  .css({
-				
-				width='10%'
-			})
+						
 				);
 			
-			$linea.append($('<td></td>')
+			$linea.append($('<td> width="50%"</td>')
 
 			.attr({
 				id: 'posicion' + index + '3'
@@ -68,27 +65,24 @@ $(document).ready(function (e) {
 
 			.css({
 				background: '#ebebeb';
-				width='50%';
+				
 			})
 
 			);
 			
-			$linea.append($('<td></td>')
+			$linea.append($('<td> width="10%"</td>')
 
 			.attr({
 				id: 'posicion' + index + '4'
 			}) // añadimos un atributo id
 
 			.html('') // el valor de la celda
-						  .css({
-		
-				width='10%'
-			})
+					
 
 
 			);
 			
-			$linea.append($('<td></td>')
+			$linea.append($('<td> width="10%"</td>')
 
 			.attr({
 				id: 'posicion' + index + '5'
@@ -98,7 +92,7 @@ $(document).ready(function (e) {
 
 			.css({
 				background: '#ebebeb';
-				width='10%';
+			
 			})
 
 			);
