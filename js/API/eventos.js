@@ -36,7 +36,7 @@ $(document).ready(function (e) {
 				.attr({
 				id: 'posicion' + index + '1'
 			})
-				.html()
+				.html('')
 				.css({
 				background: 'red'
 			})
