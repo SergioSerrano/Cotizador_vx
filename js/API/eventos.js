@@ -39,8 +39,10 @@ $(document).ready(function (e) {
 				.html('')
 				.css({
 				background: '#ebebeb'
+					
 				
 			})
+						  .addClass("clave")
 				);
 				
 			
@@ -52,6 +54,7 @@ $(document).ready(function (e) {
 				id: 'posicion' + index + '2'
 			})
 				.html('')
+						   .addClass("gen")
 						
 				);
 			
@@ -67,6 +70,7 @@ $(document).ready(function (e) {
 				background: '#ebebeb'
 				
 			})
+						  .addClass("descripcion")
 
 			);
 			
@@ -77,6 +81,7 @@ $(document).ready(function (e) {
 			}) // añadimos un atributo id
 
 			.html('') // el valor de la celda
+						  .addClass("gen")
 					
 
 
@@ -94,6 +99,7 @@ $(document).ready(function (e) {
 				background: '#ebebeb'
 			
 			})
+						  .addClass("gen")
 
 			);
 			tabla.append($linea);
