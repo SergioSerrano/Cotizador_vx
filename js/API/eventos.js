@@ -44,13 +44,8 @@ $(document).ready(function (e) {
 
 			.addClass("text"); // una clase
 
-			$celda.append('<input/>')
-				.attr({
-				type: 'text'
-				name: 'textinput'
-				id: 'Comprador'
-				value: ""
-			});
+			$celda.append('<input  type="text" name="textinput" id="'+index+'" value="" />');
+				
 			
 
 			$linea.append(celda);
