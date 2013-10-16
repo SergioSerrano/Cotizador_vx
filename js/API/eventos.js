@@ -48,7 +48,7 @@ $(document).ready(function (e) {
 				
 			
 
-			$linea.append(celda);
+			$linea.append($celda);
 
 			$linea.append($('<td></td>')
 				.attr({
