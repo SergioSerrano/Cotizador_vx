@@ -38,7 +38,7 @@ $(document).ready(function (e) {
 			})
 				.html('')
 				.css({
-				background: '#ebebeb'
+				background: '#ebebeb',
 				width='20%'
 			})
 				);
@@ -67,7 +67,7 @@ $(document).ready(function (e) {
 			.html('') // el valor de la celda    
 
 			.css({
-				background: '#ebebeb'
+				background: '#ebebeb',
 				width='50%'
 			})
 
@@ -97,7 +97,7 @@ $(document).ready(function (e) {
 			.html('') // el valor de la celda    
 
 			.css({
-				background: '#ebebeb'
+				background: '#ebebeb',
 				width='10%'
 			})
 
