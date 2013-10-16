@@ -64,7 +64,7 @@ $(document).ready(function (e) {
 			.html('') // el valor de la celda    
 
 			.css({
-				background: '#ebebeb';
+				background: '#ebebeb'
 				
 			})
 
@@ -91,7 +91,7 @@ $(document).ready(function (e) {
 			.html('') // el valor de la celda    
 
 			.css({
-				background: '#ebebeb';
+				background: '#ebebeb'
 			
 			})
 
