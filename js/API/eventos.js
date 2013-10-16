@@ -38,8 +38,8 @@ $(document).ready(function (e) {
 			})
 				.html('')
 				.css({
-				background: '#ebebeb',
-				width='20%'
+				background: '#ebebeb';
+				width='20%';
 			})
 				);
 				
@@ -67,8 +67,8 @@ $(document).ready(function (e) {
 			.html('') // el valor de la celda    
 
 			.css({
-				background: '#ebebeb',
-				width='50%'
+				background: '#ebebeb';
+				width='50%';
 			})
 
 			);
@@ -97,8 +97,8 @@ $(document).ready(function (e) {
 			.html('') // el valor de la celda    
 
 			.css({
-				background: '#ebebeb',
-				width='10%'
+				background: '#ebebeb';
+				width='10%';
 			})
 
 			);
