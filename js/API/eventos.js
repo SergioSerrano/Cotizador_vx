@@ -114,16 +114,15 @@ $(document).ready(function (e) {
 			
 						  .addClass("gen")
 
-			);
-			
+			);			
 			tabla.append($linea);
-			$('<input  type="text" name="textinput" id="hola1" value="" />').appendTo('#posicion' + index + '1');
 			
-			$('<a data-theme="c" href="#" data-transition="none" id="info_com">Guardar</a>').appendTo('#posicion' + index + '6');
+			$('<input  type="text" name="textinput" id="clv" value="" />').appendTo('#posicion' + index + '1');
+			$('<input  type="text" name="textinput" id="cnt" value="" />').appendTo('#posicion' + index + '2');			
+			$('<a data-theme="c" href="#" data-transition="none" id="info_com">X</a>').appendTo('#posicion' + index + '1');
+			$('<a data-theme="c" href="#" data-transition="none" id="info_guarda">G</a>').appendTo('#posicion' + index + '6'); 
+			
 			index++;
-
-
-
 		});
 
 
