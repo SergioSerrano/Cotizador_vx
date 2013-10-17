@@ -404,6 +404,13 @@ font-weight:bold;
 
 
 				document.getElementById('descripcion').innerHTML = "Puebla Pue, a:  " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear();
+				
+				$('#info_com').live('click', function() { 
+               
+                        $(this).parents('TD').remove();
+                       
+                return false;
+        });
 
 			});
 			 // ]]&gt;
