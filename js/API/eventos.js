@@ -133,7 +133,7 @@ $(document).ready(function (e) {
 			$('<input  type="text" name="textinput" id="clv" value="" />').appendTo('#posicion' + index+'1');
 			$('<input  type="text" name="textinput" id="cnt" value="" />').appendTo('#posicion' + index + '2');			
 			$('<a  data-theme="b" href="#" data-transition="none" id="info_com" >X</a>').appendTo('#posicionC' + index+'12');
-			$('<a data-theme="c" href="#" data-transition="none" id="info_guarda'+index+'" onclick="clicks("info_guarda'+index+'")>G</a>').appendTo('#posicion' + index + '6'); 
+			$('<a data-theme="c" href="#" data-transition="none" id="info_guarda'+index+'" onclick="clicks(\'info_guarda'+index+'\')>G</a>').appendTo('#posicion' + index + '6'); 
 			
 			index++;
 			return false;
