@@ -219,3 +219,7 @@ function subirReserva(id,th,ha,di,pe){
 		return false;
 	}
 
+Function clicks(id){
+	alert(id);
+}
+
