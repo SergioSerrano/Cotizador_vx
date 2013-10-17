@@ -116,10 +116,10 @@ $(document).ready(function (e) {
 
 			);			
 			tabla.append($linea);
-			
-			$('<input  type="text" name="textinput" id="clv" value="" />').appendTo('#posicion' + index + '1');
+			$('<div data-role="fieldcontain" data-theme="b" id="field'+index+'"></div>').appendTo('#posicion' + index + '1');
+			$('<input  type="text" name="textinput" id="clv" value="" />').appendTo('#field' + index);
 			$('<input  type="text" name="textinput" id="cnt" value="" />').appendTo('#posicion' + index + '2');			
-			$('<a data-theme="c" href="#" data-transition="none" id="info_com">X</a>').appendTo('#posicion' + index + '1');
+			$('<a data-theme="c" href="#" data-transition="none" id="info_com">X</a>').appendTo('#field' + index);
 			$('<a data-theme="c" href="#" data-transition="none" id="info_guarda">G</a>').appendTo('#posicion' + index + '6'); 
 			
 			index++;
