@@ -119,7 +119,7 @@ $(document).ready(function (e) {
 			$('<div data-role="fieldcontain" data-theme="b" id="field'+index+'"></div>').appendTo('#posicion' + index + '1');
 			$('<input  type="text" name="textinput" id="clv" value="" />').appendTo('#field' + index);
 			$('<input  type="text" name="textinput" id="cnt" value="" />').appendTo('#posicion' + index + '2');			
-			$('<a data-theme="c" href="#" data-transition="none" id="info_com">X</a>').appendTo('#field' + index);
+			$('<a for="textinput" data-theme="b" href="#" data-transition="none" id="info_com">X</a>').appendTo('#field' + index);
 			$('<a data-theme="c" href="#" data-transition="none" id="info_guarda">G</a>').appendTo('#posicion' + index + '6'); 
 			
 			index++;
