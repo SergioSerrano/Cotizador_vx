@@ -421,6 +421,15 @@ font-weight:bold;
                 return false;
 					
         });
+				//-funcion donde cacha el change y pone valores en las claves del mismo div
+		
+				$( ".clave123" ).change(function() {
+    			$( this ).parents('tr').children( ".descripcion" ).children("#las").remove();
+ 				$('<label for="textinput" data-theme="b" id="las">'+$( this ).val()+'</label>').appendTo($( this ).parents('tr').children( ".descripcion" ));	
+				$( this ).parents('tr').children( ".p_unit" ).children("#lbs").remove();
+ 				$('<label for="textinput" data-theme="b" id="lbs">'+$( this ).val()+'</label>').appendTo($( this ).parents('tr').children( ".p_unit" ));	
+   
+});
 
 			});
 			 // ]]&gt;

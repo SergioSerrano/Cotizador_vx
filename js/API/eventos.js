@@ -15,15 +15,7 @@ $(document).ready(function (e) {
 		$('#descripcion').val(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
 		
 		
-		//-funcion donde cacha el change y pone valores en las claves del mismo div
 		
-$( ".clave" ).change(function() {
-    $( this ).parents('tr').children( ".descripcion" ).children("#las").remove();
- $('<label for="textinput" data-theme="b" id="las">'+$( this ).val()+'</label>').appendTo($( this ).parents('tr').children( ".descripcion" ));	
-	$( this ).parents('tr').children( ".p_unit" ).children("#lbs").remove();
- $('<label for="textinput" data-theme="b" id="lbs">'+$( this ).val()+'</label>').appendTo($( this ).parents('tr').children( ".p_unit" ));	
-   
-});
 
 		//---------------datos 
 		$('#datos').tap(function () {
@@ -141,7 +133,7 @@ $( ".clave" ).change(function() {
 			);			
 			tabla.append($linea);
 			
-			$('<input  class="clave" type="text" name="textinput" id="clv" value="" />').appendTo('#posicion' + index+'1');
+			$('<input  class="clave123" type="text" name="textinput" id="clv" value="" />').appendTo('#posicion' + index+'1');
 			$('<input  type="text" name="textinput" id="cnt" value="" />').appendTo('#posicion' + index + '2');			
 			$('<a  data-theme="b" href="#" data-transition="none" id="info_com" >X</a>').appendTo('#posicionC' + index+'12');
 			$('<a data-theme="c" href="#" data-transition="none" id="info_guarda'+index+'" onclick="clicks('+index+')">G</a>').appendTo('#posicion' + index + '6'); 
