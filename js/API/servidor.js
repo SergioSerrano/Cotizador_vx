@@ -2,6 +2,7 @@
 
 
 
+
 function nuevoAjax()
 {
         var xmlhttp=false;

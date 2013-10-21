@@ -94,7 +94,7 @@ font-weight:bold;
 			<div data-role="content" data-theme="b" style=" top:600 ;alignment-adjust:central; vertical-align:central; text-align:center">
 				<div class="abs">
 					<div class="abs2">
-						<TABLE WIDTH=100% HEIGHT=200>
+						<TABLE WIDTH=100% HEIGHT=200 id="datos1">
 							<tr>
 								<TD width="33%" ALIGN=LEFT>
 									<img src="css/images/logoVictorinox.png" width="180px" height="138px" alt="VICTORINOX" style="right:0px;">
@@ -120,7 +120,7 @@ font-weight:bold;
 							<tr>
 								<TD width="33%" ALIGN=LEFT>
 									<label for="textinput" data-theme="b">Cliente:</label>
-									<input type="text" name="textinput" id="No_cliente" value="" />
+									<input class="clave123" type="text" name="textinput" id="No_cliente" value="" />
 								</TD>
 								<TD WIDTH="33%" ALIGN=LEFT>
 									<label for="textinput" data-theme="b">Poblacion:</label>
@@ -402,7 +402,16 @@ font-weight:bold;
 	
 		<script type="text/javascript" src="http://digitalbush.com/wp-content/uploads/2013/01/jquery.maskedinput-1.3.1.min_.js"></script>
 		<script type="text/javascript">
-			// <![CDATA[
+			$('.clave123').live('change', function() { 
+
+			$( this ).parents('tr').children( '.descripcion' ).children('#las').remove();
+ 			$('<label for="textinput" data-theme="b" id="las">'+$( this ).val()+'</label>').appendTo($( this ).parents('tr').children( '.descripcion' ));
+			$( this ).parents('tr').children( '.p_unit' ).children('#lab').remove();
+ 			$('<label for="textinput" data-theme="b" id="lab">'+$( this ).val()+'</label>').appendTo($( this ).parents('tr').children( '.p_unit' ));
+								});
+
+
+// <![CDATA[
 			jQuery(function($) {
 				$.mask.definitions['h'] = "[? 0-9]";
 
@@ -431,15 +440,12 @@ font-weight:bold;
 			
 		</script>
 		<script>
-   	$( ".clave123" ).change(function() {
-		alert("entre a el onchange");
-    			$( this ).parents('tr').children( ".descripcion" ).children("#las").remove();
- 				$('<label for="textinput" data-theme="b" id="las">'+$( this ).val()+'</label>').appendTo($( this ).parents('tr').children( ".descripcion" ));	
-				$( this ).parents('tr').children( ".p_unit" ).children("#lbs").remove();
- 				$('<label for="textinput" data-theme="b" id="lbs">'+$( this ).val()+'</label>').appendTo($( this ).parents('tr').children( ".p_unit" ));	
-   
-})
-        .change();
+			
+			
+
+			
+			
+			
 </script>
 	</body>
 
